@@ -1,0 +1,2 @@
+pior cenário: n comparações, pois o algoritmo deve realizar,
+no mínimo, n comparações. Portanto, a resposta é Ω(n).
