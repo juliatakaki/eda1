@@ -8,11 +8,15 @@ struct No{
 
 No *inclusaoCauda(No *pPrimeiro, int valor){
     No *pAux, *novo = (No *)malloc(sizeof(No));
-    novo->num = valor;
-    novo->pProx = NULL;
-    pAux = pPrimeiro;
-    while (pAux->pProx != NULL)
-        pAux = pAux->pProx;
-    pAux->pProx = novo;
-    return pPrimeiro;
+    if(novo){
+        novo->num = valor;
+        novo->pProx = NULL;
+        pAux = pPrimeiro;
+        while (pAux->pProx != NULL)
+            pAux = pAux->pProx;
+        pAux->pProx = novo;
+        return pPrimeiro;
+    }else
+        printf("\nErro ao alocar memoria.\n");
+    return NULL;
 }
