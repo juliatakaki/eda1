@@ -6,7 +6,7 @@ struct No{
     struct No *pProx;    
 };
 
-No *inclusaoCauda(No *pPrimeiro, int valor){
+No *InclusaoCauda(No *pPrimeiro, int valor){
     No *pAux, *novo = (No *)malloc(sizeof(No));
     if(novo){
         novo->num = valor;
