@@ -6,7 +6,7 @@ struct No{
     struct No *pProx;    
 };
 
-No *inclusaoCalda(No *pPrimeiro, int valor){
+No *inclusaoCauda(No *pPrimeiro, int valor){
     No *pAux, *novo = (No *)malloc(sizeof(No));
     novo->num = valor;
     novo->pProx = NULL;
